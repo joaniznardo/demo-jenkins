@@ -59,7 +59,7 @@ pipeline {
         }
         failure {
             echo "❌ Pipeline aturat. Revisa la versió de Java del sistema."
-            echo "Versió trobada: ${env.JAVA_DETECTADA ?: 'No s\\'ha pogut detectar'}"
+            echo "Versió trobada: ${env.JAVA_DETECTADA ?: 'No sha pogut detectar'}"
         }
     }
 }
