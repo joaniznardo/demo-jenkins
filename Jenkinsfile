@@ -1,1 +1,1 @@
-Jenkinsfile-inicial
+Jenkinsfile-amb-opcions
