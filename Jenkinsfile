@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'linux' }
 
     // Definim els paràmetres d'entrada que l'usuari veurà al formulari
     parameters {
