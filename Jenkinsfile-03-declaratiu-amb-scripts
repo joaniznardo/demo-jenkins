@@ -31,13 +31,13 @@ pipeline {
                     echo "🧪 Validant que la versió de Java és la requerida..."
 
                     // Usem el mètode .startsWith() de String (Groovy/Java)
-                    // per comprovar que la versió comença per "17"
-                    if (env.JAVA_DETECTADA.startsWith("17")) {
+                    // per comprovar que la versió comença per "21"
+                    if (env.JAVA_DETECTADA.startsWith("21")) {
                         echo "✅ Versió correcta: Java ${env.JAVA_DETECTADA}"
                         echo "El sistema compleix els requisits mínims. Continuem."
                     } else {
                         // error() força el fail del Pipeline amb un missatge clar
-                        error "❌ Versió incorrecta. Es requereix Java 17. Trobat: ${env.JAVA_DETECTADA}"
+                        error "❌ Versió incorrecta. Es requereix Java 21. Trobat: ${env.JAVA_DETECTADA}"
                     }
                 }
             }
